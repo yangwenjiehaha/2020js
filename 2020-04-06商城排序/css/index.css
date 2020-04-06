@@ -1,0 +1,103 @@
+html,body{
+    background-color: #f5f4f5;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrap .list{
+    width: 100%;
+    background-color: #fff;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.wrap .list span{
+    margin-right: 50px;
+    color: rgb(90, 88, 88);
+}
+.wrap .list a{
+    margin-right: 20px;
+    color: red;
+}
+.wrap .list li:hover{
+    color: red;
+}
+.wrap .list li{
+    color: #000;
+    margin-right: 10px;
+}
+.wrap .list ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrap .list ul li{
+    float: left;
+}
+
+
+/*phone*/
+.phone{
+    margin-top: 20px;
+
+}
+.phone ul{
+    margin-right: -9px;
+}
+.phone ul li{
+    box-sizing: border-box;
+    width: 232px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #fff;
+    height: 362px;
+    float: left;
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+.phone ul li img{
+    width: 180px;
+}
+.phone ul li h3{
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    padding: 10px 0;
+}
+.phone ul li h4{
+    color: #ca141d;
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+.phone ul li h4 span{
+    color: rgb(61, 197, 228);
+    font-weight: normal;
+    border: 1px solid rgb(34, 147, 247);
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 0 3px;
+}
+.phone ul li p{
+    font-size: 12px;
+    color: #ca141d;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.phone ul li p span{
+    border: 1px solid #ca141d;
+    margin-right: 5px;
+}
+.phone ul li h6{
+    text-align: left;
+    font-size: 12px;
+    color: #686262;
+    font-weight: normal;
+}
+.phone ul li h6 span{
+    margin-right: 10px;
+
+}
