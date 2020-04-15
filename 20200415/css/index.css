@@ -1,0 +1,44 @@
+html,body{
+    background-color: #f5f4f5;
+}
+.container{
+    width: 760px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container .column{
+    box-sizing: border-box;
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+}
+.container .column:nth-of-type(3){
+    margin-right: 0px;
+}
+
+.container .column .card{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    /* box-shadow: 5px 5px 5px #ccc; */
+    margin-top: 20px;
+}
+.container .column .card a{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.container .lazyImage{
+    background: url(../images/default.gif) no-repeat center center;
+    overflow: hidden;
+}
+.container .lazyImage img{
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.container .column .card p{
+    width: 100%;
+}
