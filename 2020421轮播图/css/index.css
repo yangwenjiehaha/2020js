@@ -1,0 +1,61 @@
+.wrapper {
+  width: 460px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper ul {
+  width: 2300px;
+  overflow: hidden;
+}
+.wrapper ul li {
+  width: 460px;
+  float: left;
+}
+.wrapper ul li img {
+  width: 100%;
+}
+.wrapper .scroll .left {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(185, 181, 181, 0.5);
+  left: 0px;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.wrapper .scroll .right {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(151, 147, 147, 0.5);
+  right: 0px;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.wrapper .radiu {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  z-index: 1;
+}
+.wrapper .radiu em {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(250, 248, 248, 0.8);
+}
