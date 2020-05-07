@@ -1,0 +1,135 @@
+{
+    "status": 1,
+    "msg": "Success",
+    "data": {
+        "clothes": {
+            "name": "服饰内衣",
+            "nameTwo":"运动户外",
+            "content": [
+                {
+                    "title": "女装",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "内衣",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "男装",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "运动户外服装",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "运动户外鞋包",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "运动健身器材",
+                    "link": [
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "羊绒大衣",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                },
+                {
+                    "title": "今日热卖",
+                    "link": [
+                        {
+                            "name": "https://cbu01.alicdn.com/img/ibank/2019/709/470/12215074907_1702578782.300x300.jpg",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "https://cbu01.alicdn.com/img/ibank/2020/716/810/14341018617_98608545.300x300.jpg",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "https://cbu01.alicdn.com/img/ibank/2019/108/585/12217585801_686610145.300x300.jpg",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        },
+                        {
+                            "name": "https://cbu01.alicdn.com/img/ibank/2020/257/348/14157843752_98608545.300x300.jpg",
+                            "url": "https://p4psearch.1688.com/p4p114/p4psearch/offer.htm?spm=a2609.11209760.it2i6j8a.30.44292de1YUXlZe&cosite=baidujj_pz&keywords=%E7%BE%8A%E7%BB%92%E5%A4%A7%E8%A1%A3&trackid={trackid}&location=re"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
