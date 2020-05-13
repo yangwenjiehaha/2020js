@@ -1,3 +1,62 @@
+//头部
+$(function () {
+    let $allA = $('.crosse'),
+        $hiddenCard = $('.hiddenCard'),
+        $common = $('.common'),
+        $myAli=$('.myAli'),
+        $pageA=$('.page a'),
+        $navigationA=$('.navigation a');
+    $common.mouseover(function () {
+        $(this).css({
+            borderLeft: '1px solid #ccc',
+            borderRight: '1px solid #ccc',
+            borderBottom: '1px solid #fff',
+        });
+        let m = $(this).index();
+        $hiddenCard.eq(m-1).css({
+            display: 'block',
+        });
+        $allA.eq(m-1).css({
+            borderRight: 'none',
+            borderLeft: 'none',
+        });
+        $allA.eq(m-2).css({
+            borderRight: 'none',
+        });
+        window.m=m;
+
+    })
+    $myAli.mouseover(function(){
+        $pageA.css({
+            borderRight: 'none',
+        })
+        $navigationA.css({
+            borderRight: '1px solid #f5f4f5',
+        })
+    })
+    $myAli.mouseout(function(){
+        $pageA.css({
+            borderRight: '1px solid #f5f4f5',
+        })
+    })
+    $common.mouseout(function(){
+        $hiddenCard.eq(m-1).css({
+            display: 'none',
+        });
+        $common.eq(m-1).css({
+            borderLeft: 'none',
+            borderRight: 'none',
+            borderBottom: '1px solid #ccc',
+        });
+        $allA.eq(m-1).css({
+            borderRight: '1px solid #f5f4f5',
+        });
+        $allA.eq(m-2).css({
+            borderRight: '1px solid #f5f4f5',
+        });
+    })
+})
+
 // 轮播图
 $(function () {
     let $container = $('.contentWrapper .container'),
@@ -5,7 +64,7 @@ $(function () {
         $paginationList = $container.find('.pagination>li'),
         $changeLeft = $container.children('.changeLeft'),
         $changeRight = $container.children('.changeRight'),
-        $slideContent=$('.contentWrapper .slideContent');
+        $slideContent = $('.contentWrapper .slideContent');
     let step = 0,
         prev = 0,
         interval = 3000,
@@ -55,7 +114,7 @@ $(function () {
     $container.mouseleave(function () {
         autoTimer = setInterval(autoMove, interval);
     })
- 
+
     // 点击焦点切换
     $paginationList.on('click', function () {
         let index = $(this).index();
@@ -75,23 +134,18 @@ $(function () {
     });
 
     //大盒子背景色随着图片的改变而改变
-    function bgColor(){
-        if(step===0){
-            $slideContent.css('backgroundColor','rgb(251, 56, 2)');
+    function bgColor() {
+        if (step === 0) {
+            $slideContent.css('backgroundColor', 'rgb(251, 56, 2)');
+        } else if (step === 1) {
+            $slideContent.css('backgroundColor', 'rgb(255, 8, 82)');
+        } else if (step === 2) {
+            $slideContent.css('backgroundColor', 'rgb(250, 105, 102)');
+        } else if (step === 3) {
+            $slideContent.css('backgroundColor', 'rgb(255, 255, 255)');
+        } else if (step === 4) {
+            $slideContent.css('backgroundColor', 'rgb(254, 146, 161)');
         }
-        else if(step===1){
-            $slideContent.css('backgroundColor','rgb(255, 8, 82)');
-        }
-        else if(step===2){
-            $slideContent.css('backgroundColor','rgb(250, 105, 102)');
-        }
-        else if(step===3){
-            $slideContent.css('backgroundColor','rgb(255, 255, 255)');
-        }
-        else if(step===4){
-            $slideContent.css('backgroundColor','rgb(254, 146, 161)');
-        }
-
     }
 
 });
@@ -101,50 +155,28 @@ $(function () {
     let $listAll = $('#listAll'),
         $lis = $listAll.children('li'),
         $hidden = $('#hidden'),
-        data = [];
-    let query = function query() {
-        $.ajax({
-            url: './json/show.json',
-            method: 'get',
-            async: false,
-            dataType: 'json',
-            success: result => {
-                data = result;
-            }
-        })
-    }
-    query();
-    /* let render = function render() {
-        let str = ``,
-            dataOne = data["data"]["clothes"],
-            {name,nameTwo,content}=dataOne;
-            str += `
-            <h3>
-            <em></em>
-            <a href="">${name}</a>
-            <span>/</span>
-            <a href="">${nameTwo}</a>
-        </h3>`;
-        
-        content.forEach((item,index)=>{
-            let {title,link}=item;
-            str+=`<li>
-            <h4>${title}</h4><p>`
-            link.forEach(item=>{
-                let {name,url}=item;
-                str+=`<a href="${url}">${name}</a>`;
-            })
-            str+= `</p>
-            </li>`
-           ;
-        })
-        $hidden.html(str);    
-    }
-    render(); */
+        $hiddenlis = $hidden.children('li'),
+        $asideLeft = $('.asideLeft'),
+        $dlAll=$('#hidden .clothing dl');
+    $lis.mouseover(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        let n = $(this).index();
+        $hiddenlis.eq(n).addClass('active').siblings().removeClass('active');
+        window.n = n;
+    })
+    $lis.mouseout(function () {
+        $(this).removeClass('active');
+    })
+    $asideLeft.mouseout(function () {
+        $hiddenlis.removeClass('active');
+    })
+    $hidden.mouseover(function () {
+        $hiddenlis.eq(n).addClass('active');
+    })
+
+
+
 })
-
-
-
 
 //渲染页面
 $(function () {
@@ -163,15 +195,14 @@ $(function () {
             dataType: 'json',
             success: result => {
                 data = result;
-                // console.log(data);
             }
         })
     }
     dataQuery1();
     //渲染数据1
     let render1 = function render1() {
-        let str = ``,
-            dataPublic = data['data'];
+        let str = ``;
+        var dataPublic = data['data'];
         dataPublic.forEach(item => {
             let {
                 img
@@ -299,7 +330,7 @@ $(function () {
         })
 
     }
-    dataQuery3();
+    //dataQuery3();
 
     //渲染数据3
     let render3 = function render3() {
@@ -327,7 +358,7 @@ $(function () {
         })
         $ulList.append(str);
     }
-    render3();
+    //render3();
 
     //图片延迟加载部分一
     let lazyBigImages = function lazyImages() {
