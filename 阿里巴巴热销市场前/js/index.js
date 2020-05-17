@@ -122,7 +122,6 @@ $(function () {
         prev = step;
         step = index;
         change();
-        bgColor();
     });
 
     // 点击左右按钮实现切换
@@ -132,7 +131,6 @@ $(function () {
         step--;
         step < 0 ? step = len - 1 : null;
         change();
-        bgColor();
     });
 
     //大盒子背景色随着图片的改变而改变
@@ -186,21 +184,17 @@ $(function () {
         $contents = $('#contents'),
         $ulList = $('#ulList'),
         data = [],
-        count = 0,
-        $guess=$('.guess');
+        count = 0;
 
     //请求数据1
     let dataQuery1 = function dataQuery1() {
         $.ajax({
             url: './json/special.json',
             method: 'get',
-            async: true,
+            async: false,
             dataType: 'json',
             success: result => {
                 data = result;
-                render1();
-                lazyBigImages();
-                lazySmallImage();
             }
         })
     }
@@ -242,7 +236,7 @@ $(function () {
             $source.html(str);
         })
     }
-    // render1();
+    render1();
 
 
     //请求数据2
@@ -250,13 +244,10 @@ $(function () {
         $.ajax({
             url: './json/hotType.json',
             method: 'get',
-            async: true,
+            async: false,
             dataType: 'json',
             success: result => {
                 data = result;
-                render2();
-                bigImage();
-                smallImage();
             }
         })
     }
@@ -323,7 +314,7 @@ $(function () {
             $contents.html(str);
         })
     }
-    // render2();
+    render2();
 
 
     //请求数据3
@@ -335,12 +326,6 @@ $(function () {
             method: 'get',
             success: result => {
                 data = result;
-                /* lazyImgThree();
-                render3(); */
-                /* window.addEventListener('scroll',function(){
-                    lazyImgThree();
-                    loadMore();
-                }) */
             }
         })
 
@@ -367,7 +352,7 @@ $(function () {
                 <span>${pice}/个</span>
                 <span>${sold}天成交${number}件</span>
             </p>
-            <h5><a href="javascript;">${title}</a></h5>
+            <h5>${title}</h5>
         </li>`;
 
         })
@@ -456,7 +441,7 @@ $(function () {
             let $item = $(item);
             if ($item.css('opacity') === 1) return;
             let h = $item.offset().top;
-            if (T >= h) {
+            if (T > h) {
                 let src = $item.attr('data-img');
                 $item.attr('src', src);
                 $item.on('load', function () {
@@ -471,14 +456,14 @@ $(function () {
         let $window = $(window);
         let T = $window.outerHeight() + $window.scrollTop(),
             h = $ulList.offset().top + $ulList.outerHeight();
-        if (h <= T) {
+        if (h < T) {
             count++;
             if (count > 3) return;
             if (isRender) return;
             isRender = true;
             dataQuery3();
-            lazyImgThree();
             render3();
+            lazyImgThree();
             isRender = false;
         }
     }
@@ -492,34 +477,4 @@ $(function () {
         loadMore();
     }
 
-})
-//回到顶部
-$(function(){
-    let goto = document.querySelector('.main');
-    window.addEventListener('scroll',function(){
-        let st = document.documentElement.scrollTop,
-            ch = document.documentElement.clientHeight; 
-        if (st > ch) {
-            goto.style.display = 'block';
-        } else {
-            goto.style.display = 'none';
-        }
-    })
-
-    goto.onclick = function () {
-            if(this.isGoing)return;
-            this.isGoing = true;
-            let t = document.documentElement.scrollTop; 
-            let step = t/10;
-            let timer = setInterval(() => {
-              t -= step;
-              if(t < 0){
-                t = 0;
-                clearInterval(timer);
-                this.isGoing = false;
-              }
-              document.documentElement.scrollTop = t;
-            }, 10);
-
-    }
 })

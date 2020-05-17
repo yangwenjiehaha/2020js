@@ -1,0 +1,392 @@
+.head {
+    width: 952px;
+    margin: 0 auto;
+    padding: 12px 4px;
+    height: 49px;
+    line-height: 49px;
+}
+
+.head h1 {
+    float: left;
+    line-height: 49px;
+    padding-left: 50px;
+}
+
+.head h1 img {
+    margin-top: 8px;
+}
+
+.head span:nth-of-type(1) {
+    font-size: 30px;
+    font-weight: 50;
+    color: #ccc;
+}
+
+.head span.login {
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    display: inline-block;
+    height: 49px;
+    line-height: 59px;
+    margin-left: 7px;
+}
+
+.content {
+    position: relative;
+    width: 952px;
+    margin: 0 auto;
+}
+
+.content .mainLogin {
+    float: left;
+    width: 555px;
+    height: 344px;
+}
+
+.content .mainLogin img {
+    width: 100%;
+}
+
+.content .loginForm {
+    float: right;
+}
+
+.content .loginForm .tips {
+    width: 360px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #e7d3ac;
+    background-color: #fffbdd;
+}
+
+.content .loginForm .tips em {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 18px;
+    background: url(../images/laba.PNG) no-repeat center center;
+    margin-left: 10px;
+}
+
+.content .loginForm .tips span {
+    width: 360px;
+    height: 32px;
+    line-height: 32px;
+    color: #f27800;
+    font-size: 12px;
+}
+.content .loginForm .bigForm{
+    position: relative;
+    width: 355px;
+    height: 313px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.content .loginForm .forms {
+    position: relative;
+    width: 121px;
+    background-color: #fff;
+    margin: 3px;
+    left:185px;
+
+}
+
+.content .loginForm .forms .code {
+    float: left;
+    border: 1px solid #ff9000;
+    padding: 5px 10px;
+    color: #ff9000;
+    font-size: 12px;
+    font-weight: 400;
+    width: 115px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content .loginForm .forms em {
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    float: right;
+    display:block;
+    width: 0;
+    height: 0;
+    border-color: transparent \0;
+    *border-color: transparent;
+    border-style: solid;
+    overflow: hidden;
+    border-left-color: #fff;
+    border-bottom-color:#fff;
+    border-width: 6px 0 6px 6px;
+    border-top: 1px solid #ff9000;;
+    border-right: 1px solid #ff9000;;
+    transform: rotate(45deg);
+}
+.content .loginForm .scanning{
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.content .loginForm .scanning i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    background: url(../images/saoma2.PNG) no-repeat 0px 0;
+}
+.content .loginForm  .changeLogin{
+    margin-top: 32px;
+    padding: 5px 25px;
+}
+.content .loginForm  .changeLogin .passLogin{
+    display: none;
+}
+.content .loginForm  .changeLogin .passLogin.active{
+    display: block;
+}
+.content .loginForm  .changeLogin .passLogin input{
+    font-size: 14px;
+}
+.content .loginForm  .changeLogin .mode a{
+    text-align: left;
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.content .loginForm  .changeLogin .mode a.active{
+    border-bottom: 2px solid #000;
+}
+.content .loginForm  .changeLogin .userName{
+    position: relative;
+    margin-top: 20px;
+    width: 304px;
+}
+.content .loginForm  .changeLogin .password{
+    position: relative;
+}
+.content .loginForm  .changeLogin .userName em{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display:block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../images/username.PNG) no-repeat center center;
+}
+.content .loginForm  .changeLogin .userName input{
+    width: 304px;
+    height: 42px;
+    box-sizing: border-box;
+    padding-left: 45px;
+}
+.content .loginForm  .changeLogin .password em{
+    background: url(../images/password.PNG) no-repeat center center;
+}
+.content .loginForm  .changeLogin button{
+    background-color: #f40;
+    border: none;
+    width: 304px;
+    height: 42px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.content .loginForm  .changeLogin .message .userName em{
+    background: url(../images/ph.PNG) no-repeat center center;
+}
+.content .loginForm  .changeLogin .message .password em{
+    background: url(../images/kc.PNG) no-repeat center center;
+}
+.content .loginForm  .changeLogin .message .password a{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.content .loginForm .forget{
+    font-size: 12px;
+    padding-top: 40px;
+    text-align: right;
+    display: block;
+}
+
+.dimensional{
+    position: absolute;
+    top: 54px;
+    right: 0px;
+    width: 360px;
+    height: 339px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+}
+.dimensional p{
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #3c3c3c;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+.dimensional .com{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.dimensional .com em{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background:url(../images/computer.PNG) no-repeat 0px 0px;
+}
+.dimensional .img{
+    width: 130px;
+    height: 130px;
+    margin-left: 117.5px;  
+    margin-top: 20px;  
+}
+.dimensional .img img{
+    width: 100%;
+}
+.dimensional .phone{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.dimensional .phone i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 38px;
+    background: url(../images/saoyisao.PNG) no-repeat center center;
+}
+.dimensional .phone span{
+    color: #6c6c6c;
+}
+.dimensional .phone span a{
+    color: #f40;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.dimensional h4{
+    text-align: center;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: normal;
+}
+.dimensional h5{
+    text-align: right;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+.dimensional h5 a{
+    color: #6c6c6c;
+}
+
+/* footer部分 */
+.foot{
+    width: 952px;
+    margin:50px auto;
+}
+
+.foot .footTop{
+    font-size: 12px;
+    border-bottom: 3px solid #ff9000;
+    padding-bottom: 5px;
+}
+.foot .footTop .topLeft{
+    float: left;
+    margin-left: 20px;
+}
+.foot .footTop .topRight{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.foot .footTop .topRight span{
+    margin-top: 15px;
+}
+.foot .footTop em{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+.foot .footTop .topLeft .speed em{
+    background: url(../images/footicon.PNG) no-repeat -3px -2px;
+    margin-top: -2px;
+}
+.foot .footTop .topLeft p em{
+    background: url(../images/footicon.PNG) no-repeat -3px -20px;
+    margin-top: -2px;
+}
+.foot .footTop .topRight i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 20px;
+    background: url(../images/suggest.PNG) no-repeat -3px -2px;
+}
+.foot .copy{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.foot .copy span{
+    color: #ccc;
+}
+.foot .copy a,.foot .footBottom a{
+    color: #000;
+}
+
+.foot .footBottom{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+.foot .footBottom span{
+    color: #ccc;
+}
+
+.fix{
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 40px;
+    height: 40px; 
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+}
+.fix img{
+    width: 100%;
+    height: 100%;
+}
+.fix a{
+    display: block;
+    color: #f40;
+    font-size: 12px;
+    display: none;
+    margin-top: 3px;
+}
+.fix:hover a{
+   display: block;
+}
+.fix:hover img{
+    display: none;
+ }

@@ -1,0 +1,232 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .change {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .change ul {
+    width: 480px;
+    height: 46px;
+    margin: 0 auto;
+}
+
+.container .change li {
+    width: 170px;
+    padding-left: 70px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.container .change li em {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+
+}
+
+.container .change li.active {
+    border-bottom: 1px solid #ff7300;
+}
+
+.container .change li.active a {
+    color: #ff7300;
+}
+
+.container .change li:nth-of-type(1) em {
+    background: url(../images/qieye2.PNG) no-repeat center center;
+}
+
+.container .change li:nth-of-type(2) i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/geren.PNG) no-repeat center center;
+}
+
+.container .change li.active em {
+    background: url(../images/qiye.PNG) no-repeat center center;
+}
+
+.container .change li.active i {
+    background: url(../images/geren2.PNG) no-repeat center center;
+}
+
+.container .change li a {
+    color: #000000;
+}
+
+.container .change li:nth-of-type(1) {
+    float: left;
+}
+
+.container .change li:nth-of-type(2) {
+    float: right;
+
+}
+.container .containerMain{
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container .containerMain p{ 
+    font-size: 12px;
+    margin-top: 10px;
+}
+.container .containerMain { 
+    font-size: 12px;
+    margin-top: 10px;
+}
+.container .containerMain .required{
+    margin-top: 15px;
+}
+.container .containerMain .required label{
+    margin-right: 5px;
+}
+.container .containerMain .required input{ 
+    width: 298px;
+    height: 38px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.container .containerMain .check{ 
+    margin-top: 15px;
+}
+.container .containerMain .check input{ 
+    margin-top: 3px;
+}
+.container .containerMain button{
+    background-color: #ff7300;
+    border: none;
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    margin-top: 15px;
+    color: #fff;
+    margin-left: -100px;
+}
+.container dl{
+    width: 180px;
+    position: absolute;
+    top:35px;
+    right: 0px;
+    border: 1px solid  #ccc;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-align: left;
+}
+.container dl dt{
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+}
+.container dl dd{
+    font-weight: bold;
+    color: #ccc;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.container .declare{
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    margin-left: -495px;
+    width: 990px;
+    height: 590px;
+    background-color: rgba(0, 0, 0, .2);
+}
+.container .declare .subject{
+    position: absolute;
+    margin-left: -349px;
+    left: 50%;
+    top: 45px;
+    width: 698px;
+    height: 500px;
+    background-color: #fff;
+}
+.container .declare .subject .agreement{
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #ccc;
+}
+.container .declare .subject .agreement span{
+   float: left;
+   margin-left: 20px;
+}
+.container .declare .subject .agreement a{
+    float: right;
+    font-size: 20px;
+    margin-right: 15px;
+    height: 42px;
+    line-height: 42px;
+ }
+ .container .declare .subject p{
+    padding: 0px 20px 20px;
+    font-size: 12px;
+}
+ .container .declare .subject p:nth-of-type(1){
+     padding: 20px 20px 0px;
+     font-size: 12px;
+ }
+ .container .declare .subject p span{
+    color: #000;
+    font-weight: bold;
+}
+ .container .declare .subject ol{
+     font-size: 12px;
+     padding-left: 20px;
+ }
+ .container .declare .subject ol li{
+    height: 30px;
+    line-height: 30px;
+}
+.container .declare .subject ol li a{
+    color: #000;
+    font-weight: bold;
+}
+ .container .declare .subject .agreement a:hover{
+    color: #ff7300;
+ }
+ .container .declare .subject button{
+     background-color: #ff7300;
+     border: none;
+     width: 100px;
+    height: 40px;
+    color: #fff;
+    margin-left: 299px;
+ }
+
+.foot{
+    margin-top: 80px;
+}
+.foot .copy{
+    border-top: 3px solid #ff7300;
+}
+
+.container .distinguish{
+    display: none;
+}
+.container .distinguish.gb{
+    padding-bottom: 105px;
+}
+.container .distinguish.active{
+    display: block;
+}

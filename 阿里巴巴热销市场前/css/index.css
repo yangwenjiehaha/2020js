@@ -263,9 +263,6 @@
 .header .navTop_right div.navigation .hiddenCard dl:nth-child(3) dt {
     height: 20px;
 }
-.header .navTop_right div.navigation .hiddenCard dl dd a {
-    border-right: none;
-}
 
 .header .navTop_right div.navigation .hiddenCard dt {
     float: left;
@@ -796,9 +793,7 @@
 }
 .contentWrapper .asideLeft:hover .showCard{
     width: 965px;
-    /* border-right: 1px solid #ccc; */
-    box-shadow: 1px 1px 10px #ccc;
-    transition: all .2s;
+    transition: all .3s;
 }
 .contentWrapper .asideLeft .showCard li.active{
     display: block;
@@ -1026,6 +1021,10 @@
     margin-top: 10px;
 }
 
+.classification h3 {
+    /* background-color: #fff; */
+}
+
 .classification .enterprise:nth-of-type(odd) {
     margin-right: 16px;
 }
@@ -1086,7 +1085,6 @@
     width: 140px;
     height: 192px;
     text-align: center;
-    background:url(../images/bg1.gif) no-repeat center center;
 }
 
 .classification .enterprise .commodity li:nth-of-type(1),
@@ -1100,7 +1098,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 1s ease;
 }
 
 .classification .enterprise .commodity li p {
@@ -1146,7 +1144,6 @@
 }
 
 .guess .freeShipping li {
-    background:url(../images/bg1.gif) no-repeat center center;
     float: left;
     width: 222px;
     height: 313px;
@@ -1191,16 +1188,11 @@
     color: #999;
     line-height: 19px;
 }
-.guess .freeShipping li h5{
-    padding: 0 14px;
-}
-.guess .freeShipping li h5 a{
+
+.guess .freeShipping li h5 {
     font-size: 12px;
     color: #666;
-    
-}
-.guess .freeShipping li h5 a:hover{
-    text-decoration: underline;
+    padding: 0 14px;
 }
 
 /* footer */
@@ -1248,57 +1240,6 @@
 .footer .mainFooter .footerRight .guide dl dd a:hover{
     text-decoration: underline;
 }
-
-/* 回到顶部 */
-.main {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 200px;
-    right: -10px;
-    transform: translate(-50%,-50%);
-    border: 1px solid #ff5400;
-    border-radius: 50%;
-    padding: 2px;
-    overflow: hidden;
-    display: none;
-}
-
-.main .wave {
-    width: 40px;
-    height: 40px;
-    background-color: #ff5400;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.main a{
-    display: block;
-    position: absolute;
-    text-align: center;
-    font-size: 12px;
-    top: 7px;
-    left: 11px;
-
-}
-.wave::after {
-    position: absolute;
-    left: 50%;
-    top: 2px;
-    transform: translate(-50%,-60%);
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 40%;
-    animation: wave 3s linear infinite;
-}
-
-@keyframes wave {
-    100% {
-        transform:translate(-50%,-60%) rotate(360deg);
-    }
-}
-
 
 
 
