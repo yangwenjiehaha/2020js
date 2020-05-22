@@ -175,6 +175,20 @@ $(function () {
     $hidden.mouseover(function () {
         $hiddenlis.eq(n).addClass('active');
     })
+    /* $listAll.mouseover(function(){
+        $hidden.css({
+            width: '965px',
+            boxShadow:'1px 1px 10px #ccc',
+            transition:'all .2s',
+        })
+    })
+    $listAll.mouseout(function(){
+        $hidden.css({
+            width: '0px',
+            boxShadow:'none',
+            transition:'0',
+        })
+    }) */
 
 
 
@@ -495,31 +509,35 @@ $(function () {
 })
 //回到顶部
 $(function(){
-    let goto = document.querySelector('.main');
+    let $goto = $('.main');
     window.addEventListener('scroll',function(){
-        let st = document.documentElement.scrollTop,
-            ch = document.documentElement.clientHeight; 
+        let st = $(window).scrollTop(),
+            ch = $(window).height(); 
         if (st > ch) {
-            goto.style.display = 'block';
+            $goto.css({
+                display:'block'
+            })
         } else {
-            goto.style.display = 'none';
+           $goto.css({
+            display : 'none'
+           })
         }
     })
 
-    goto.onclick = function () {
-            if(this.isGoing)return;
-            this.isGoing = true;
-            let t = document.documentElement.scrollTop; 
-            let step = t/10;
-            let timer = setInterval(() => {
-              t -= step;
-              if(t < 0){
-                t = 0;
-                clearInterval(timer);
-                this.isGoing = false;
-              }
-              document.documentElement.scrollTop = t;
-            }, 10);
+$goto.on('click',function () {
+        if(this.isGoing)return;
+        this.isGoing = true;
+        let t = $(window).scrollTop(); 
+        let step = t/10;
+        let timer = setInterval(() => {
+            t -= step;
+            if(t < 0){
+            t = 0;
+            clearInterval(timer);
+            this.isGoing = false;
+            }
+            document.documentElement.scrollTop = t;
+        }, 10);
 
-    }
+})
 })

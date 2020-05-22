@@ -233,8 +233,9 @@
 
 }
 
+
 .header .navTop_right div.brand .hiddenCard {
-    width: 90px;
+    width: 92px;
     padding: 0px;
 }
 
@@ -263,8 +264,8 @@
 .header .navTop_right div.navigation .hiddenCard dl:nth-child(3) dt {
     height: 20px;
 }
-.header .navTop_right div.navigation .hiddenCard dl dd a {
-    border-right: none;
+.header .navTop_right div.navigation .hiddenCard dl a {
+    border-right:none;
 }
 
 .header .navTop_right div.navigation .hiddenCard dt {
@@ -628,22 +629,24 @@
 }
 
 /* asideLeft */
-.contentWrapper .layout .asideLeft {
+.contentWrapper .layout .asideLeftBig{
     float: left;
     width: 218px;
     height: 400px;
     background-color: rgba(68, 68, 68, .8);
-    padding-top: 5px;
+}
+.contentWrapper .layout .asideLeft {
+    margin-top: 5px;
+    height: 390px;   
     box-sizing: border-box;
 }
 
 .contentWrapper .asideLeft ul {
-    padding-top: 5px;
     position: absolute;
     z-index: 999;
     width: 218px;
-    height: 400px;
-    top: 0px;
+    height: 390px;
+    top: 5px;
     left: 0px;
 
 }
@@ -1262,6 +1265,9 @@
     padding: 2px;
     overflow: hidden;
     display: none;
+}
+.main:hover{
+    cursor: pointer;
 }
 
 .main .wave {
